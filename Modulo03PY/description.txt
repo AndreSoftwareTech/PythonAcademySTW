@@ -1,0 +1,7 @@
+OOP (Programação Orientada a Objetos) é um paradigma de programação que organiza o código em objetos, que são instâncias de classes.
+ Em Python, é possível aplicar os princípios da OOP, como encapsulamento, herança e polimorfismo. 
+ Isso permite estruturar o código de forma modular, reutilizável e fácil de entender. 
+ Com OOP, é possível modelar problemas complexos de forma mais intuitiva, criar abstrações eficientes e facilitar a manutenção e expansão do código.
+  Python oferece suporte completo para OOP e incentiva a adoção desse paradigma através de sua sintaxe clara e recursos avançados, 
+  como herança múltipla e métodos especiais. A OOP é amplamente utilizada em projetos de grande porte e é uma abordagem poderosa 
+  para o desenvolvimento de software.

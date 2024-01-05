@@ -1,0 +1,6 @@
+Python funcional é um paradigma de programação que se baseia no conceito de funções puras e imutabilidade de dados. 
+Ao adotar esse estilo de programação, o código Python se torna mais conciso, legível e de fácil manutenção. 
+A linguagem oferece suporte a recursos como funções lambda, map, filter e reduce, que permitem a manipulação de listas,
+ iterações e transformações de dados de forma eficiente. Com o uso dessas ferramentas, é possível criar pipelines de processamento de dados, 
+ realizar composição de funções e explorar a programação orientada a expressões. Python funcional abre um leque de possibilidades
+  para desenvolvedores escreverem código mais expressivo, modular e escalável.
