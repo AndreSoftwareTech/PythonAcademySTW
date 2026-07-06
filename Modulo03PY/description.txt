@@ -1,7 +1,64 @@
-OOP (Programação Orientada a Objetos) é um paradigma de programação que organiza o código em objetos, que são instâncias de classes.
- Em Python, é possível aplicar os princípios da OOP, como encapsulamento, herança e polimorfismo. 
- Isso permite estruturar o código de forma modular, reutilizável e fácil de entender. 
- Com OOP, é possível modelar problemas complexos de forma mais intuitiva, criar abstrações eficientes e facilitar a manutenção e expansão do código.
-  Python oferece suporte completo para OOP e incentiva a adoção desse paradigma através de sua sintaxe clara e recursos avançados, 
-  como herança múltipla e métodos especiais. A OOP é amplamente utilizada em projetos de grande porte e é uma abordagem poderosa 
-  para o desenvolvimento de software.
+============================================================
+MODULO 03 - ORIENTACAO A OBJETOS (OOP)
+============================================================
+
+DE ONDE VIEMOS, PARA ONDE VAMOS
+-------------------------------
+    Modulo 01 -> fundamentos (variaveis, lacos, colecoes)
+    Modulo 02 -> funcoes, pastas, persistencia em arquivo/json
+    Modulo 03 -> ORGANIZAR dados e comportamentos em CLASSES e OBJETOS
+    Modulo 04 -> aplicacao completa em camadas com banco de dados
+
+A evolucao central deste modulo:
+    dados soltos (variaveis)  ->  funcoes + dict  ->  OBJETOS (classes)
+    arquivo json com dict     ->  arquivo json com objetos (to_dict)
+
+
+O QUE E ORIENTACAO A OBJETOS?
+-----------------------------
+Modelar o mundo real com CLASSES (molde) e OBJETOS (instancia).
+Cada objeto tem ATRIBUTOS (dados) e METODOS (comportamentos).
+Principios trabalhados aqui:
+    - Encapsulamento (esconder dados com __ e @property)
+    - Heranca (classe filha herda da pai)
+    - Polimorfismo (mesmo metodo, comportamentos diferentes)
+
+
+O QUE ESTE MODULO ENSINA
+------------------------
+- Classes, objetos, self e __init__ (construtor).
+- Metodos de instancia e __str__ (representacao em texto).
+- Encapsulamento: atributos privados (__), getters/setters e @property.
+- Heranca, super() e especializacao de classes.
+- @classmethod, @staticmethod, polimorfismo e composicao.
+- Metodos especiais (__repr__, __eq__).
+- Serializacao de objetos: to_dict() / from_dict().
+- CRUD com objetos persistidos em JSON.
+- Mini-MVC: model + controller + main (ponte para o Modulo 04).
+
+
+ESTRUTURA DO MODULO
+-------------------
+    Modulo03PY/
+      description.txt       (este arquivo)
+      indice.txt            (trilha completa das aulas)
+      Aulas/
+        aula01/ ... aula15/
+      Exercicios/
+        exercicio01.py ... exercicio15.py
+
+
+COMO EXECUTAR UMA AULA
+----------------------
+    cd Aulas/aula05
+    python main.py
+
+Nas aulas 09-12 e 14, ha um unico arquivo .py para executar.
+Na aula 15, execute main.py (importa model/ e controller/).
+
+
+PROJETO FINAL DO MODULO
+-----------------------
+A aula15 monta um mini-sistema MVC de cadastro de alunos com JSON —
+a ultima etapa antes de entrar na arquitetura completa do Modulo 04.
+============================================================

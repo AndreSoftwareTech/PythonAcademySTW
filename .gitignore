@@ -61,6 +61,13 @@ local_settings.py
 db.sqlite3
 db.sqlite3-journal
 
+# Banco SQLite gerado em runtime (Modulo04PY)
+*.db
+
+# JSON gerado em runtime (exercicios/testes)
+clientes.json
+alunos.json
+
 # Flask stuff:
 instance/
 .webassets-cache

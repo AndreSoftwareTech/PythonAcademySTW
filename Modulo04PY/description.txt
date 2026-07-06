@@ -1,0 +1,87 @@
+============================================================
+MODULO 04 - APLICACAO CONSOLE EM CAMADAS COM BANCO DE DADOS
+============================================================
+
+DE ONDE VIEMOS, PARA ONDE VAMOS
+-------------------------------
+Este modulo FECHA a jornada iniciada no Modulo 01. Tudo que foi
+aprendido converge aqui em um sistema profissional e organizado.
+
+    Modulo 01 -> fundamentos (logica, variaveis, lacos, colecoes)
+    Modulo 02 -> funcoes, pastas, persistencia em arquivo/json
+    Modulo 03 -> orientacao a objetos (classes, encapsulamento, heranca)
+    Modulo 04 -> TUDO JUNTO + banco de dados SQLite em camadas
+
+A evolucao central deste modulo e sobre "guardar dados de verdade":
+    variavel na memoria  ->  arquivo texto  ->  objeto  ->  banco de dados
+
+
+DOMINIO (TEMA)
+--------------
+Cadastro de PRODUTOS de uma loja, com CRUD completo:
+    C - Create (cadastrar)   R - Read (listar/buscar)
+    U - Update (atualizar)   D - Delete (remover)
+
+
+O QUE ESTE MODULO ENSINA
+------------------------
+- Arquitetura em camadas: cada pasta com UMA responsabilidade.
+- Fluxo completo: View -> Controller -> Service -> DAO -> Conexao -> DB.
+- Banco de dados relacional com SQLite (modulo sqlite3 do Python).
+- SQL: CREATE TABLE, INSERT, SELECT, UPDATE, DELETE.
+- Consultas parametrizadas (protecao contra SQL Injection).
+- Tratamento de erros com raise / try / except.
+- CRUD completo de produtos em uma aplicacao console.
+
+
+ESTRUTURA DO MODULO (cada pasta = uma responsabilidade)
+-----------------------------------------------------
+    Modulo04PY/
+      description.txt       (este arquivo)
+      main.py               (ponto de entrada)
+      schema.sql            (DDL da tabela, para estudo)
+      view/menu.py          (VIEW: input e print)
+      controller/           (CONTROLLER: orquestracao e erros)
+      service/              (SERVICE: regras de negocio)
+      model/produto.py      (MODEL: classe Produto)
+      dao/produto_dao.py    (DAO: comandos SQL)
+      database/conexao.py   (CONEXAO: SQLite)
+      loja.db               (criado na 1a execucao)
+
+Cada pasta possui __init__.py, transformando-a em pacote Python
+e permitindo imports entre camadas (ex.: from service.produto_service import ...).
+
+
+POR QUE SEPARAR EM CAMADAS?
+---------------------------
+- Cada pasta tem UMA tarefa: mais facil de entender e corrigir.
+- Regras (service) ficam longe do SQL (dao) e da tela (view).
+- Para trocar SQLite por MySQL, altere somente database/ e dao/.
+- E o padrao usado em sistemas profissionais de verdade.
+
+
+COMO OS DADOS FLUEM (cadastrar um produto)
+------------------------------------------
+    main.py
+      -> view/menu.py .................. le os dados (input)
+         -> controller/ ................ orquestra e trata erros
+            -> service/ ............... valida regras de negocio
+               -> dao/ ................ executa o SQL
+                  -> database/ ......... abre a conexao
+                     -> loja.db ....... dado persistido
+
+
+COMO EXECUTAR
+-------------
+    cd Modulo04PY
+    python main.py
+
+Na primeira execucao o arquivo loja.db e criado automaticamente.
+Os dados permanecem entre uma execucao e outra.
+
+
+PROJETO FINAL DO CURSO
+----------------------
+Este modulo E o projeto final. O aluno que chega aqui domina a
+progressao completa: logica -> funcoes -> objetos -> arquitetura.
+============================================================

@@ -1,6 +1,61 @@
-Python funcional é um paradigma de programação que se baseia no conceito de funções puras e imutabilidade de dados. 
-Ao adotar esse estilo de programação, o código Python se torna mais conciso, legível e de fácil manutenção. 
-A linguagem oferece suporte a recursos como funções lambda, map, filter e reduce, que permitem a manipulação de listas,
- iterações e transformações de dados de forma eficiente. Com o uso dessas ferramentas, é possível criar pipelines de processamento de dados, 
- realizar composição de funções e explorar a programação orientada a expressões. Python funcional abre um leque de possibilidades
-  para desenvolvedores escreverem código mais expressivo, modular e escalável.
+============================================================
+MODULO 02 - FUNCOES, ESTRUTURA DE PASTAS E PERSISTENCIA
+============================================================
+
+DE ONDE VIEMOS, PARA ONDE VAMOS
+-------------------------------
+No Modulo 01 aprendemos os fundamentos (variaveis, condicoes, lacos,
+colecoes). Mas repetir o mesmo codigo varias vezes e cansativo e
+perigoso. O Modulo 02 resolve isso ensinando a ORGANIZAR o codigo:
+
+    Modulo 01 -> pensar a logica (o "como fazer")
+    Modulo 02 -> organizar a logica em FUNCOES, ARQUIVOS e PASTAS,
+                 e por fim SALVAR os dados em disco (persistencia)
+    Modulo 03 -> orientacao a objetos (o proximo passo)
+    Modulo 04 -> aplicacao completa com banco de dados
+
+A evolucao central deste modulo e sobre "onde moram os dados":
+    variavel na memoria  ->  arquivo texto (.txt)  ->  arquivo json
+
+
+O QUE ESTE MODULO ENSINA
+------------------------
+- Funcoes: definicao (def), parametros, return e multiplos retornos.
+- Escopo de variaveis (local x global).
+- Argumentos padrao, *args e docstrings.
+- Modularizacao: importar funcoes de outros arquivos.
+- Organizar projetos em PASTAS (pacotes com __init__.py).
+- CRUD: Create, Read, Update, Delete.
+- Persistencia em arquivo .txt e, depois, de forma segura em JSON.
+
+
+ESTRUTURA DO MODULO
+-------------------
+    Modulo02PY/
+      description.txt       (este arquivo)
+      indice.txt            (trilha completa das aulas)
+      Aulas/
+        aula01/ ... aula15/     (uma pasta por aula)
+      Exercicios/
+        exercicio01.py ... exercicio15.py
+
+
+COMO EXECUTAR UMA AULA
+----------------------
+Cada aula fica em sua propria pasta. Entre nela e rode o arquivo principal.
+
+    cd Aulas/aula01
+    python definindo_funcao.py
+
+    cd Aulas/aula13
+    python main.py
+
+Nas aulas com main.py, execute sempre o main.py (ele importa os demais
+arquivos da mesma pasta).
+
+
+PROJETO FINAL DO MODULO
+-----------------------
+A aula15 relaciona dois arquivos JSON (alunos e cursos) e gera um
+relatorio cruzado — primeiro contato com dados que "conversam" entre si.
+============================================================

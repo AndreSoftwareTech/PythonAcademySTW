@@ -1,0 +1,32 @@
+============================================================
+MODULO 02 - FUNCOES E PERSISTENCIA | INDICE DAS AULAS
+============================================================
+Cada aula fica em sua propria pasta dentro de Aulas/.
+[NOVO] = aula criada nesta revisao para preencher lacunas.
+
+BLOCO 1 - FUNCOES (FUNDAMENTOS)
+  aula01  Definindo e chamando funcoes        (definindo_funcao.py)
+  aula02  Funcoes com parametros              (parametros.py)
+  aula03  Retorno de valores (return)         (retorno.py)
+  aula04  Retornando varios valores           (multiplos_retornos.py)  [BUG corrigido]
+  aula05  Parametros tipados e calculo        (funcoes_calculo.py)
+  aula06  Escopo de variaveis (local x global)(escopo.py)              [NOVO]
+  aula07  Argumentos padrao e *args           (argumentos.py)          [NOVO]
+  aula08  Docstrings (documentar funcoes)     (docstrings.py)          [NOVO]
+
+BLOCO 2 - MODULARIZACAO E COLECOES
+  aula09  Separando funcoes em arquivos       (calculadora.py + main.py)
+  aula10  CRUD em memoria com funcoes (lista) (tarefas.py + main.py)
+
+BLOCO 3 - ESTRUTURA DE PASTAS E PERSISTENCIA
+  aula11  Organizando o projeto em pastas     (controller/ + main.py)
+  aula12  Persistencia em arquivo txt         (controller.py + main.py)
+  aula13  CRUD completo em arquivo txt        (controller.py + main.py) [BUG saudacao corrigido]
+  aula14  Persistencia segura com json        (controller.py + main.py) [NOVO]
+  aula15  Relacionar 2 arquivos + relatorio   (controller.py + main.py)
+
+------------------------------------------------------------
+COMO RODAR
+  cd Aulas/aulaXX
+  python main.py        (ou o unico .py da pasta, nas aulas 01-08)
+============================================================

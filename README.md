@@ -1,59 +1,98 @@
+# Python Academy STW
 
-# Repositório Python Academy
+**Pensar primeiro. Construir com proposito.**
 
-Bem-vindo ao Repositório Python Academy! Este repositório é dedicado a fornecer exemplos acadêmicos e projetos relacionados à linguagem de programação Python, visando auxiliar no aprendizado e desenvolvimento.
+Material didatico progressivo de logica de programacao e Python — do primeiro `print` a uma aplicacao completa com banco de dados, organizada em quatro modulos sequenciais.
 
-## Sobre o Python
+---
 
-Python é uma linguagem de programação versátil e de alto nível, conhecida por sua simplicidade e legibilidade de código. Abaixo estão algumas informações essenciais sobre o Python:
+## Sobre o projeto
 
-### Principais Características
+O **Python Academy STW** e um curso estruturado para ensinar programacao desde a base: antes de frameworks ou ferramentas avancadas, o aluno aprende a **pensar como programador**. Cada modulo parte do anterior, com aulas comentadas, exercicios praticos e um projeto que amarra os conceitos.
 
-1. Simplicidade e Legibilidade:
-   - Python é projetado para ser fácil de ler e escrever, incentivando uma sintaxe clara e expressiva.
+A trilha segue uma unica linha evolutiva — o mesmo problema ("guardar e manipular dados") cresce em complexidade a cada etapa:
 
-2. Linguagem Interpretada:
-   - Python é uma linguagem interpretada, o que significa que o código pode ser executado linha por linha sem a necessidade de compilação prévia.
-
-3. Ampla Comunidade e Ecossistema:
-   - Python possui uma comunidade ativa e uma vasta coleção de bibliotecas, frameworks e ferramentas, tornando-a adequada para uma variedade de aplicações.
-
-4. Orientação a Objetos:
-   - Python suporta programação orientada a objetos, permitindo a criação de classes e objetos para modelar dados e comportamentos.
-
-5. Interpretação Dinâmica:
-   - As variáveis em Python são dinamicamente tipadas, facilitando a flexibilidade na manipulação de dados.
-
-## Conteúdo
-
-Este diretório contém exemplos e projetos básicos demonstrando a utilização de Python. Aqui você encontrará tutoriais e códigos de amostra para aprimorar suas habilidades na linguagem. 
-Sinta-se à vontade para explorar os diretórios correspondentes a cada exemplo para obter mais detalhes.
-
-## Recursos Adicionais
-
-- Documentação Oficial: [Python Documentation](https://docs.python.org/3/)
-- Comunidade: Python possui uma comunidade global ativa. Você pode encontrar suporte em [Python Community](https://www.python.org/community/) e em outras plataformas online.
-
-## Como Começar
-
-### Instalação
-
-Para começar a usar Python, é necessário ter o interpretador Python instalado. Você pode baixar a versão mais recente em [Python Downloads](https://www.python.org/downloads/).
-
-1. Clone este repositório:
-
-    ```bash
-    git clone https://github.com/AndreSoftwareTech/PythonAcademySTW.git
-    ```
-    
-### Executar Projetos
-
-Navegue até o diretório do projeto que deseja executar e utilize o interpretador Python:
-
-```bash
-python nome_do_arquivo.py
+```
+logica e sintaxe  →  funcoes e arquivos  →  classes e objetos  →  sistema em camadas + banco
 ```
 
-Isso executará o código Python correspondente. Sinta-se à vontade para explorar e experimentar com os projetos disponíveis neste repositório!
+---
 
-Divirta-se codificando com Python!
+## Modulos
+
+| Modulo | Pasta | Foco | Aulas |
+|--------|-------|------|-------|
+| **01** | `Modulo01PY/` | Fundamentos: variaveis, tipos, condicionais, lacos, colecoes | 51 |
+| **02** | `Modulo02PY/` | Funcoes, modularizacao, pastas e persistencia (txt/json) | 15 |
+| **03** | `Modulo03PY/` | Orientacao a objetos: classes, encapsulamento, heranca | 15 |
+| **04** | `Modulo04PY/` | Aplicacao console em camadas com SQLite | 1 projeto |
+
+Cada modulo contem:
+
+- **`description.txt`** — visao geral, de onde viemos e para onde vamos
+- **`Aulas/`** — codigo comentado, pronto para acompanhar em aula
+- **`Exercicios/`** — um desafio por aula, com enunciado em comentarios
+
+Consulte o `description.txt` de cada modulo antes de comecar.
+
+---
+
+## Como comecar
+
+**Requisito:** Python 3.10 ou superior ([python.org/downloads](https://www.python.org/downloads/))
+
+```bash
+git clone https://github.com/AndreSoftwareTech/PythonAcademySTW.git
+cd PythonAcademySTW
+```
+
+**Modulo 01** (primeiro passo):
+
+```bash
+cd Modulo01PY/Aulas
+python aula01.py
+```
+
+**Modulo 04** (projeto final):
+
+```bash
+cd Modulo04PY
+python main.py
+```
+
+Siga a ordem dos modulos. Cada `description.txt` explica a conexao com o modulo anterior e o proximo.
+
+---
+
+## Estrutura do repositorio
+
+```
+PythonAcademySTW/
+├── README.md
+├── Modulo01PY/     Aulas/ + Exercicios/     (fundamentos)
+├── Modulo02PY/     Aulas/ + Exercicios/     (funcoes e persistencia)
+├── Modulo03PY/     Aulas/ + Exercicios/     (orientacao a objetos)
+└── Modulo04PY/     aplicacao em camadas     (banco de dados)
+```
+
+---
+
+## Para professores
+
+- As aulas foram pensadas para **compartilhamento de tela**: comentarios explicam o *como* e o *porque*.
+- Os exercicios validam se o aluno prestou atencao; enunciados sao criativos e progressivos.
+- O gabarito do professor fica abaixo da linha `# --- GABARITO DO PROFESSOR ---` em cada exercicio.
+
+---
+
+## Recursos
+
+- [Documentacao oficial Python](https://docs.python.org/3/)
+- [Comunidade Python](https://www.python.org/community/)
+
+---
+
+<p align="center">
+  <strong>Python Academy STW</strong><br>
+  <em>Da logica ao sistema — cada linha tem um proposito.</em>
+</p>

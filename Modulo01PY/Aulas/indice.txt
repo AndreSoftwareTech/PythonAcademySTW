@@ -1,0 +1,87 @@
+============================================================
+MODULO 01 - FUNDAMENTOS | INDICE DAS AULAS
+============================================================
+Trilha reorganizada em ordem logica de aprendizado.
+As aulas marcadas com [NOVO] foram acrescentadas para
+preencher lacunas de conteudo dos fundamentos.
+
+BLOCO 1 - PRIMEIROS PASSOS
+  aula01  Saida de dados: print / "hello world"
+  aula02  Comentarios e boas praticas                     [NOVO]
+  aula03  Variaveis (guardando valores)
+  aula04  Entrada de dados: input
+
+BLOCO 2 - TIPOS E FORMATACAO DE SAIDA
+  aula05  Tipos primitivos (str, int, float, bool)
+  aula06  Verificando o tipo: type()
+  aula07  Concatenacao na saida (print com virgula e +)
+  aula08  Interpolacao com f-string
+  aula09  Formatacao com .format()
+  aula10  F-strings formatadas (.2f, %, alinhamento)      [NOVO]
+
+BLOCO 3 - STRINGS (TEXTO) A FUNDO
+  aula11  Operador de repeticao em strings ("=" * 20)
+  aula12  Metodos booleanos de string (isnumeric, isalpha...)
+  aula13  Strings: indexacao e fatiamento                 [NOVO]
+  aula14  Strings: metodos essenciais (upper, split...)   [NOVO]
+
+BLOCO 4 - OPERADORES E MATEMATICA
+  aula15  Operadores matematicos
+  aula16  Soma com conversao da entrada
+  aula17  Modulo math (sqrt) e resto da divisao
+  aula18  Precedencia aritmetica e media
+
+BLOCO 5 - DECISOES (CONDICIONAIS)
+  aula19  Operadores relacionais (==, !=, >, <...)
+  aula20  Operadores logicos: and, or, not                [NOVO]
+  aula21  Estrutura condicional if / elif / else
+  aula22  Condicional por faixas de valor
+  aula23  Aprovado ou reprovado (if / else)
+  aula24  Par ou impar
+
+BLOCO 6 - COLECOES DE DADOS
+  aula25  Listas: criar, indexar e fatiar                 [NOVO]
+  aula26  Listas: metodos (append, remove, sort...)       [NOVO]
+  aula27  Aleatoriedade: random.choice em lista
+  aula28  Aleatoriedade: shuffle (embaralhar)
+  aula29  Aleatoriedade: randint (numeros)                [NOVO]
+  aula30  Sorteio com condicionais
+  aula31  Tuplas (colecao imutavel)                       [NOVO]
+  aula32  Conjuntos - set (sem repeticao)                 [NOVO]
+  aula33  Dicionarios: criar e acessar
+  aula34  Dicionarios: percorrer e alterar                [NOVO]
+
+BLOCO 7 - REPETICAO (LACO FOR)
+  aula35  Repeticao manual (a motivacao para os lacos)
+  aula36  for: range basico
+  aula37  for: intervalo (inicio, fim)
+  aula38  for: com passo
+  aula39  for: contagem decrescente
+  aula40  for: com entrada do usuario
+  aula41  for: cronometro com sleep
+  aula42  break e continue                                [NOVO]
+  aula43  Acumuladores e contadores                       [NOVO]
+  aula44  Tabuada com for
+  aula45  Laco aninhado (for dentro de for)               [NOVO]
+
+BLOCO 8 - REPETICAO (LACO WHILE) E ROBUSTEZ
+  aula46  while: introducao
+  aula47  while: incremento
+  aula48  while: "deseja continuar?" (sim/nao)
+  aula49  Validacao de entrada (while True + break)       [NOVO]
+  aula50  Tratamento de erros (try / except)              [NOVO]
+
+PROJETO FINAL
+  aula51  Cadastro de aluno (while + for + dicionario)
+
+------------------------------------------------------------
+CORRECOES DE BUGS aplicadas nesta revisao:
+  - aula46 (while): a variavel era usada sem ser inicializada
+    (gerava NameError). Agora inicia em 0.
+  - aula30 (sorteio): os elif repetiam a mesma condicao (nome2).
+    Corrigido para nome3 e nome4.
+  - aula51 (projeto): a checagem "sim" nao aceitava "Sim"/"SIM".
+    Corrigido com .lower().
+  - Removida a antiga aula de "for" com range(1, numero-5), que
+    tinha logica quebrada e era redundante com a aula40.
+============================================================

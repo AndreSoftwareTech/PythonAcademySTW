@@ -1,0 +1,41 @@
+============================================================
+MODULO 03 - ORIENTACAO A OBJETOS | INDICE DAS AULAS
+============================================================
+Cada aula fica em sua propria pasta dentro de Aulas/.
+[NOVO] = aula criada nesta revisao para preencher lacunas.
+
+BLOCO 1 - CLASSES E OBJETOS
+  aula01  Classes, self e __init__           (conta.py + main.py)  [BUG corrigido]
+  aula02  Atributos, metodos e __str__       (conta.py + main.py)
+  aula03  Construtor completo                (conta.py + main.py)
+
+BLOCO 2 - COMPORTAMENTO E ENCAPSULAMENTO
+  aula04  Tres formas de inicializar         (pessoa.py + main.py) [nomes padronizados]
+  aula05  Metodos de instancia (Conta)       (conta.py + main.py)  [validacoes]
+  aula06  Encapsulamento: getters/setters    (conta.py + main.py)
+  aula07  Encapsulamento com @property       (conta.py + main.py)  [prompt corrigido]
+
+BLOCO 3 - HERANCA E OOP AVANCADO
+  aula08  Heranca e super()                  (contas.py + main.py) [dominio unificado]
+  aula09  @classmethod e @staticmethod       (metodos_classe.py)     [NOVO]
+  aula10  Polimorfismo                       (polimorfismo.py)       [NOVO]
+  aula11  Composicao vs heranca              (composicao.py)         [NOVO]
+  aula12  Metodos especiais __repr__/__eq__  (metodos_especiais.py)  [NOVO]
+
+BLOCO 4 - OOP + PERSISTENCIA + PROJETO
+  aula13  CRUD OOP com JSON                  (cliente + controller + main) [BUG corrigido]
+  aula14  Serializacao to_dict/from_dict     (serializacao.py)       [NOVO]
+  aula15  Mini-MVC (projeto final)           (model/ + controller/ + main) [NOVO]
+
+------------------------------------------------------------
+COMO RODAR
+  cd Aulas/aulaXX
+  python main.py        (ou o unico .py da pasta, nas aulas 09-12 e 14)
+
+CORRECOES DESTA REVISAO
+  - aula01: __init__ agora ATRIBUI valores a self (nao so anotava tipo).
+  - aula04: atributos padronizados (nome, idade) em snake_case.
+  - aula07: prompt "Numero da conta" corrigido.
+  - aula08: heranca com ContaBancaria base coerente.
+  - aula13: controller reescrito para objetos Cliente + JSON (nao dict/eval).
+============================================================
